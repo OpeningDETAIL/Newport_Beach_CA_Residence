@@ -61,3 +61,7 @@ Icon
 
 #AutoCAD temporary files
 *.dwl*
+
+#Revit-IFC trash
+*.sharedparameters.txt
+*.log.html
