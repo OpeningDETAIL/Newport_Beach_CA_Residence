@@ -1,0 +1,23 @@
+# This macro checks all the visible objects in the current
+# document for lines smaller than 1/32 inches, which is the minimum Revit can take.
+# If any of those lines is found, a new object is added to the model with all the
+# problematic lines highlighted.
+
+import FreeCAD,FreeCADGui,Part
+
+minl = 0.8 # min 0.8 millimeters
+edges = []
+for o in FreeCAD.ActiveDocument.Objects:
+	if o.ViewObject.Visibility == True:
+		if o.isDerivedFrom("Part::Feature"):
+			if o.Shape:
+				for e in o.Shape.Edges:
+					if e.Length <= minl:
+						edges.append(e)
+if edges:
+	result = Part.makeCompound(edges)
+	Part.show(result)
+	FreeCADGui.Selection.clearSelection()
+	r = FreeCAD.ActiveDocument.Objects[-1]
+	r.ViewObject.LineWidth = 5
+	FreeCADGui.Selection.addSelection(r)

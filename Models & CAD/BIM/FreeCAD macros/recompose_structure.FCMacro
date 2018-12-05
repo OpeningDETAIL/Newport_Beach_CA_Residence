@@ -1,0 +1,40 @@
+# This macro allows to recreate an extruded Arch Structure object from another object (clone,
+# non-parametric part, or even another Arch Structure). Select the base face that is the
+# extrusion profile, and run the macro. The original object will be deleted (undoable)
+
+import FreeCAD,FreeCADGui,Arch,Draft
+
+# get selected object and face
+sel = FreeCADGui.Selection.getSelectionEx()[0]
+obj = sel.Object
+name = obj.Name
+label = obj.Label
+fac = sel.SubObjects[0]
+
+# make this undoable
+FreeCAD.ActiveDocument.openTransaction("Recompose")
+
+# recompose the base wire
+verts = [v.Point for v in fac.Vertexes]
+wir = Draft.makeWire(verts,closed=True)
+
+# make the structure
+struct = Arch.makeStructure(wir)
+
+# deduce the normal and extrusion size
+norm = fac.normalAt(0,0).negative()
+struct.Normal = norm
+for e in obj.Shape.Edges:
+	if abs(e.tangentAt(0).getAngle(norm)) < 0.0001:
+		struct.Height = e.Length
+
+# add material
+if hasattr(obj,"Material") and obj.Material:
+	struct.Material = obj.Material
+
+# delete original object
+FreeCAD.ActiveDocument.removeObject(name)
+struct.Label = label
+
+# commit changes
+FreeCAD.ActiveDocument.commitTransaction()
