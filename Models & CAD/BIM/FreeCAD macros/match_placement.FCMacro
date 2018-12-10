@@ -1,0 +1,10 @@
+# This macro works with at least 2 selected objects
+# When launched, the Placement of the first one will be applied to all the other selected objects
+
+import FreeCADGui
+
+sel = FreeCADGui.Selection.getSelection()
+if len(sel) >= 2:
+	base = sel[0].Placement
+	for obj in sel[1:]:
+		obj.Placement = base
