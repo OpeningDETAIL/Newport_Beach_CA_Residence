@@ -1,0 +1,22 @@
+# this macro rotates the selected objects 180 degrees
+# along axis Z, thus flipping their side when viewed
+# vertically (ex. in sections)
+
+import FreeCAD,FreeCADGui,Draft
+
+sel = FreeCADGui.Selection.getSelection()
+bb = None
+# get the bound box of all objects together so we
+# can have a central point to rotate around
+for obj in sel:
+	if hasattr(obj,"Shape"):
+		if hasattr(obj.Shape,"BoundBox"):
+			if bb:
+				bb.add(obj.Shape.BoundBox)
+			else:
+				bb = obj.Shape.BoundBox
+if bb:
+	FreeCAD.ActiveDocument.openTransaction("Flip Z")
+	Draft.rotate(sel,180,center=bb.Center,axis=FreeCAD.Vector(0,0,1),copy=False)
+	FreeCAD.ActiveDocument.commitTransaction()
+	FreeCAD.ActiveDocument.recompute()
