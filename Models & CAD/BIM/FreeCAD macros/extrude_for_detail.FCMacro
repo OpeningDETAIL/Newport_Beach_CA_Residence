@@ -1,0 +1,26 @@
+import FreeCAD,FreeCADGui,Arch
+from PySide import QtCore,QtGui
+
+# get selected objects
+sel = FreeCADGui.Selection.getSelection()
+if sel:
+	# open a dialog to get a label name
+	ok = False
+	text = QtGui.QInputDialog.getText(None, "Object label","Enter a label:",QtGui.QLineEdit.Normal,"",ok)
+# empty the selection
+FreeCADGui.Selection.clearSelection()
+for obj in sel:
+	# create the structure and set its extrusion direction to the current WP axis
+	struct = Arch.makeStructure(obj)
+	struct.Height = 2000
+	struct.Normal = FreeCAD.DraftWorkingPlane.axis
+	struct.IfcRole = "Undefined"
+	# set the label
+	if text:
+		struct.Label = text[0]
+	# select the new object
+	FreeCADGui.Selection.addSelection(struct)
+# run the bim material command
+FreeCADGui.runCommand("BIM_Material")
+# recompute
+FreeCAD.ActiveDocument.recompute() 
