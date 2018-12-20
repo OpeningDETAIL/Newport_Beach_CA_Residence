@@ -8,8 +8,8 @@
 | P1      | 8             | 2              | all done | Yorik | A        |
 | A1      | 5             | 5              | all done | Yorik | B        |
 | F1      | 6             | 3              | all done | Yorik | B        |
-| F2      | 6             | 4              |          |       |          |
-| G1      | 6             | 3              |          |       |          |
+| F2      | 6             | 4              | all done | Yorik | B        |
+| G1      | 6             | 3              | all done | Yorik | B        |
 | K1      | 5             | 4              |          |       |          |
 | K2      | 5             | 4              |          |       |          |
 | A2      | 2             | 1              |          |       |          |
