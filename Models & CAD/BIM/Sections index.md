@@ -14,9 +14,9 @@
 | K2      | 5             | 4              |          |       |          |
 | A2      | 2             | 1              | all done | Yorik | D        |
 | C1      | 4             | 2              | all done | Yorik | D        |
-| D1      | 2             | 2              |          |       |          |
-| D2      | 3             | 2              |          |       |          |
-| G1      | 5             | 1              |          |       |          |
+| D1      | 2             | 2              | all done | Yorik | D        |
+| D2      | 3             | 2              | all done | Yorik | D        |
+| E1      | 5             | 1              |          |       |          |
 | E2      | 4             | 4              |          |       |          |
 | F3      | 5             | 5              |          |       |          |
 | H1      | 2             | 2              |          |       |          |
