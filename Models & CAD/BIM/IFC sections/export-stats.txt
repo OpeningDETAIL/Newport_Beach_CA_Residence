@@ -1,0 +1,942 @@
+model A
+
+1    :  IfcBuildingStorey  ( no shape ) :  Section L1
+2    :  IfcBuildingElementProxy  ( extrusion ) :  Blocking001
+3    :  IfcBuildingElementProxy  ( clone ) :  Blocking002
+4    :  IfcBuildingElementProxy  ( extrusion ) :  Plywood panel
+5    :  IfcBuildingElementProxy  ( extrusion ) :  Stucco
+      subtracting  extrusion  :  Structure
+6    :  IfcBuildingElementProxy  ( extrusion ) :  Membrane
+7    :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile
+8    :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile001
+9    :  IfcBuildingElementProxy  ( extrusion ) :  Louvre frame
+10   :  IfcBuildingElementProxy  ( clone ) :  Louvre frame001
+11   :  IfcBuildingElementProxy  ( extrusion ) :  Louvre fins
+12   :  IfcBuildingElementProxy  ( clone ) :  Blocking006
+13   :  IfcBuildingElementProxy  ( extrusion ) :  Window glass
+14   :  IfcBuildingElementProxy  ( extrusion ) :  Footer
+15   :  IfcBuildingElementProxy  ( extrusion ) :  Framing
+16   :  IfcBuildingElementProxy  ( clone ) :  Framing001
+17   :  IfcBuildingElementProxy  ( clone ) :  Footer001
+18   :  IfcBuildingElementProxy  ( extrusion ) :  Window glass001
+19   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile002
+20   :  IfcBuildingElementProxy  ( clone ) :  Metal profile003
+21   :  IfcBuildingElementProxy  ( extrusion ) :  Structure004
+22   :  IfcBuildingElementProxy  ( extrusion ) :  Structure005
+23   :  IfcBuildingElementProxy  ( extrusion ) :  Structure006
+24   :  IfcBuildingElementProxy  ( clone ) :  Structure007
+25   :  IfcBuildingElementProxy  ( extrusion ) :  Skylight glass
+26   :  IfcBuildingElementProxy  ( extrusion ) :  Skylight profile
+27   :  IfcBuildingElementProxy  ( extrusion ) :  Skylight profile001
+28   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum008
+29   :  IfcBuildingElementProxy  ( extrusion ) :  Structure019
+30   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood018
+31   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum012
+32   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood010
+33   :  IfcBuildingElementProxy  ( extrusion ) :  Roof
+34   :  IfcBuildingElementProxy  ( extrusion ) :  Roof001
+35   :  IfcBuildingElementProxy  ( extrusion ) :  Roof006
+36   :  IfcBuildingElementProxy  ( extrusion ) :  Roof007
+37   :  IfcBuildingElementProxy  ( extrusion ) :  Structure003
+38   :  IfcBuildingElementProxy  ( clone ) :  Structure002
+39   :  IfcBuildingElementProxy  ( extrusion ) :  Insulation010
+40   :  IfcBuildingElementProxy  ( extrusion ) :  Insulation012
+41   :  IfcBuildingElementProxy  ( clone ) :  Insulation011
+42   :  IfcBuildingElementProxy  ( clone ) :  Roof008
+43   :  IfcBuildingElementProxy  ( clone ) :  Metal profile004
+44   :  IfcBuildingElementProxy  ( extrusion ) :  Membrane002
+45   :  IfcBuildingElementProxy  ( extrusion ) :  Insulation013
+46   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood024
+47   :  IfcBuildingElementProxy  ( extrusion ) :  Membrane003
+48   :  IfcBuildingElementProxy  ( extrusion ) :  Stucco008
+49   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile005
+50   :  IfcBuildingElementProxy  ( extrusion ) :  Joint
+51   :  IfcBuildingElementProxy  ( extrusion ) :  Joint001
+52   :  IfcBuildingElementProxy  ( extrusion ) :  Slab
+53   :  IfcBuildingElementProxy  ( extrusion ) :  Sand
+54   :  IfcBuildingElementProxy  ( extrusion ) :  Gravel
+55   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood025
+56   :  IfcBuildingElementProxy  ( extrusion ) :  Flooring001
+57   :  IfcBuildingElementProxy  ( extrusion ) :  Slab001
+58   :  IfcBuildingElementProxy  ( clone ) :  Blocking010
+59   :  IfcBuildingElementProxy  ( extrusion ) :  Window frame004
+60   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum014
+61   :  IfcBuildingElementProxy  ( extrusion ) :  Joint002
+62   :  IfcBuildingElementProxy  ( extrusion ) :  Window frame005
+63   :  IfcBuildingElementProxy  ( clone ) :  Metal profile006
+64   :  IfcBuildingElementProxy  ( clone ) :  Metal profile007
+65   :  IfcBuildingElementProxy  ( clone ) :  Joint003
+66   :  IfcBuildingElementProxy  ( clone ) :  Window frame006
+67   :  IfcBuildingElementProxy  ( clone ) :  Joint004
+68   :  IfcBuildingElementProxy  ( extrusion ) :  Window frame
+69   :  IfcBuildingElementProxy  ( extrusion ) :  Blocking013
+70   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile008
+71   :  IfcBuildingElementProxy  ( clone ) :  Blocking014
+72   :  IfcBuildingElementProxy  ( clone ) :  Joint005
+73   :  IfcBuildingElementProxy  ( extrusion ) :  Stucco010
+74   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum016
+75   :  IfcBuildingElementProxy  ( clone ) :  Metal profile009
+76   :  IfcBuildingElementProxy  ( clone ) :  Metal profile010
+77   :  IfcBuildingElementProxy  ( extrusion ) :  Framing016
+78   :  IfcBuildingElementProxy  ( extrusion ) :  Framing018
+79   :  IfcBuildingElementProxy  ( clone ) :  Framing017
+80   :  IfcBuildingElementProxy  ( clone ) :  Framing019
+81   :  IfcBuildingElementProxy  ( extrusion ) :  Trim
+82   :  IfcBuildingElementProxy  ( extrusion ) :  Flashing
+83   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood009
+84   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood066
+85   :  IfcBuildingElementProxy  ( extrusion ) :  SPRAY FOAM001
+86   :  IfcBuildingElementProxy  ( extrusion ) :  Framing058
+87   :  IfcBuildingElementProxy  ( clone ) :  Framing059
+88   :  IfcBuildingElementProxy  ( extrusion ) :  Flooring008
+89   :  IfcBuildingElementProxy  ( extrusion ) :  Blocking012
+90   :  IfcBuildingElementProxy  ( clone ) :  Blocking033
+91   :  IfcBuildingElementProxy  ( clone ) :  Blocking034
+92   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood
+93   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood026
+94   :  IfcBuildingElementProxy  ( extrusion ) :  Stucco006
+95   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood panel002
+96   :  IfcBuildingElementProxy  ( extrusion ) :  Blocking
+97   :  IfcBuildingElementProxy  ( clone ) :  Blocking035
+98   :  IfcBuildingElementProxy  ( extrusion ) :  plywood
+99   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile024
+100  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood017
+101  :  IfcBuildingElementProxy  ( triangulated ) :  Joint016
+102  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum022
+103  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum021
+104  :  IfcBuildingElementProxy  ( extrusion ) :  Window glass006
+105  :  IfcBuildingElementProxy  ( extrusion ) :  Window glass005
+106  :  IfcBuildingElementProxy  ( no shape ) :  Offset2D020070
+107  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking059
+108  :  IfcBuildingElementProxy  ( clone ) :  Blocking056
+109  :  IfcBuildingElementProxy  ( clone ) :  Blocking055
+110  :  IfcBuildingElementProxy  ( clone ) :  Blocking054
+111  :  IfcBuildingElementProxy  ( clone ) :  Blocking053
+112  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking052
+113  :  IfcBuildingElementProxy  ( clone ) :  Blocking051
+114  :  IfcBuildingElementProxy  ( clone ) :  Blocking050
+115  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking049
+116  :  IfcBuildingStorey  ( no shape ) :  Section P1
+117  :  IfcBuildingElementProxy  ( extrusion ) :  Structure020
+118  :  IfcBuildingElementProxy  ( clone ) :  Structure021
+119  :  IfcBuildingElementProxy  ( clone ) :  Structure022
+120  :  IfcBuildingElementProxy  ( extrusion ) :  Structure025
+121  :  IfcBuildingElementProxy  ( extrusion ) :  Framing025
+122  :  IfcBuildingElementProxy  ( clone ) :  Framing024
+123  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood035
+124  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood036
+125  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood042
+126  :  IfcBuildingElementProxy  ( clone ) :  Window frame007
+127  :  IfcBuildingElementProxy  ( clone ) :  Metal profile013
+128  :  IfcBuildingElementProxy  ( brep ) :  Joint008
+129  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood048
+130  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood049
+131  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum017
+132  :  IfcBuildingElementProxy  ( extrusion ) :  Roof022
+133  :  IfcBuildingElementProxy  ( extrusion ) :  Roof027
+134  :  IfcBuildingElementProxy  ( clone ) :  Roof024
+135  :  IfcBuildingElementProxy  ( extrusion ) :  Framing026
+136  :  IfcBuildingElementProxy  ( clone ) :  Metal profile015
+137  :  IfcBuildingElementProxy  ( clone ) :  Blocking017
+138  :  IfcBuildingElementProxy  ( clone ) :  Metal profile016
+139  :  IfcBuildingElementProxy  ( clone ) :  Blocking020
+140  :  IfcBuildingElementProxy  ( clone ) :  Window frame009
+141  :  IfcBuildingElementProxy  ( clone ) :  Joint009
+142  :  IfcBuildingElementProxy  ( extrusion ) :  Structure026
+143  :  IfcBuildingElementProxy  ( clone ) :  Footer002
+144  :  IfcBuildingElementProxy  ( extrusion ) :  Framing029
+145  :  IfcBuildingElementProxy  ( clone ) :  Framing030
+146  :  IfcBuildingElementProxy  ( extrusion ) :  Framing032
+147  :  IfcBuildingElementProxy  ( clone ) :  Blocking021
+148  :  IfcBuildingElementProxy  ( clone ) :  Footer003
+149  :  IfcBuildingElementProxy  ( clone ) :  Metal profile017
+150  :  IfcBuildingElementProxy  ( clone ) :  Metal profile018
+151  :  IfcBuildingElementProxy  ( clone ) :  Joint010
+152  :  IfcBuildingElementProxy  ( clone ) :  Joint011
+153  :  IfcBuildingElementProxy  ( clone ) :  Slab002
+154  :  IfcBuildingElementProxy  ( clone ) :  Sand001
+155  :  IfcBuildingElementProxy  ( clone ) :  Gravel001
+156  :  IfcBuildingElementProxy  ( clone ) :  Plywood052
+157  :  IfcBuildingElementProxy  ( clone ) :  Flooring003
+158  :  IfcBuildingElementProxy  ( clone ) :  Slab003
+159  :  IfcBuildingElementProxy  ( clone ) :  Blocking024
+160  :  IfcBuildingElementProxy  ( clone ) :  Joint012
+161  :  IfcBuildingElementProxy  ( clone ) :  Metal profile019
+162  :  IfcBuildingElementProxy  ( extrusion ) :  Glass
+163  :  IfcBuildingElementProxy  ( clone ) :  Window frame011
+164  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum018
+165  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane005
+166  :  IfcBuildingElementProxy  ( extrusion ) :  Insulation015
+167  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood051
+168  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco012
+169  :  IfcBuildingElementProxy  ( clone ) :  Joint013
+170  :  IfcBuildingElementProxy  ( clone ) :  Joint014
+171  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco011
+172  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane004
+173  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood panel003
+174  :  IfcBuildingElementProxy  ( clone ) :  Metal profile020
+175  :  IfcBuildingElementProxy  ( clone ) :  Window frame012
+176  :  IfcBuildingElementProxy  ( clone ) :  Joint015
+177  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood064
+178  :  IfcBuildingElementProxy  ( clone ) :  Metal profile022
+179  :  IfcBuildingElementProxy  ( clone ) :  Metal profile021
+180  :  IfcBuildingElementProxy  ( clone ) :  Blocking032
+181  :  IfcBuildingElementProxy  ( clone ) :  Blocking031
+182  :  IfcBuildingElementProxy  ( clone ) :  Blocking030
+183  :  IfcBuildingElementProxy  ( clone ) :  Blocking029
+184  :  IfcBuildingElementProxy  ( brep ) :  Glass001
+185  :  IfcBuildingElementProxy  ( clone ) :  Metal profile023
+186  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco013
+187  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane007
+188  :  IfcBuildingElementProxy  ( extrusion ) :  Framing038
+189  :  IfcBuildingElementProxy  ( extrusion ) :  Insulation016
+190  :  IfcBuildingElementProxy  ( clone ) :  Framing039
+191  :  IfcBuildingElementProxy  ( extrusion ) :  Insulation019
+192  :  IfcBuildingElementProxy  ( extrusion ) :  Structure027
+193  :  IfcBuildingElementProxy  ( extrusion ) :  SPRAY FOAM
+194  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood034
+195  :  IfcBuildingElementProxy  ( extrusion ) :  2x Blocking
+196  :  IfcBuildingElementProxy  ( extrusion ) :  White Oak Board001
+197  :  IfcBuildingElementProxy  ( extrusion ) :  White Oak Board
+198  :  IfcBuildingElementProxy  ( extrusion ) :  Soffit003
+199  :  IfcBuildingElementProxy  ( extrusion ) :  Gutter Adherance Membrane
+200  :  IfcBuildingElementProxy  ( extrusion ) :  METALFLASHING
+201  :  IfcBuildingElementProxy  ( extrusion ) :  METAL FLASHING001
+202  :  IfcBuildingElementProxy  ( extrusion ) :  Gutter @ Roof
+203  :  IfcBuildingElementProxy  ( extrusion ) :  Gutter
+204  :  IfcBuildingElementProxy  ( extrusion ) :  ORGANIC FELT
+205  :  IfcBuildingElementProxy  ( extrusion ) :  1X WOODTRIM
+206  :  IfcBuildingElementProxy  ( extrusion ) :  2X8 BLOCKING
+207  :  IfcBuildingElementProxy  ( clone ) :  2X8 BLOCKING001
+208  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL STOP
+209  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL STOP001
+210  :  IfcBuildingElementProxy  ( extrusion ) :  BITUMEN CAP SHEET
+211  :  IfcBuildingElementProxy  ( extrusion ) :  INTERPLY
+212  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS008
+213  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS011
+214  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS010
+215  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS009
+216  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL-STOP
+217  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood065
+218  :  IfcBuildingElementProxy  ( extrusion ) :  FIRESTONE INSULATION001
+219  :  IfcBuildingElementProxy  ( extrusion ) :  SOFFIT DRIP SCREED
+220  :  IfcBuildingElementProxy  ( extrusion ) :  PLYWOOD SPACER
+221  :  IfcBuildingElementProxy  ( extrusion ) :  Framing049
+222  :  IfcBuildingElementProxy  ( clone ) :  Framing051
+223  :  IfcBuildingElementProxy  ( extrusion ) :  Flooring004
+224  :  IfcBuildingElementProxy  ( clone ) :  Flooring005
+225  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum020
+226  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood063
+227  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane055
+228  :  IfcBuildingElementProxy  ( extrusion ) :  stucco
+229  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL BALLAST002
+230  :  IfcBuildingElementProxy  ( extrusion ) :  insulation
+231  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane056
+232  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane057
+233  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane058
+234  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane059
+235  :  IfcBuildingElementProxy  ( extrusion ) :  Insulation014
+236  :  IfcBuildingElementProxy  ( extrusion ) :  Framing045
+237  :  IfcBuildingElementProxy  ( extrusion ) :  metal profile
+238  :  IfcBuildingElementProxy  ( extrusion ) :  COVER BOARD
+239  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking045
+240  :  IfcBuildingElementProxy  ( clone ) :  Blocking047
+241  :  IfcBuildingElementProxy  ( clone ) :  Blocking046
+242  :  IfcBuildingElementProxy  ( clone ) :  Blocking048
+243  :  IfcBuildingElementProxy  ( clone ) :  Blocking043
+244  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking042
+245  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking041
+246  :  IfcBuildingElementProxy  ( clone ) :  Blocking037
+247  :  IfcBuildingElementProxy  ( clone ) :  Blocking044
+248  :  IfcBuildingElementProxy  ( clone ) :  Blocking038
+249  :  IfcBuildingElementProxy  ( clone ) :  Blocking040
+250  :  IfcBuildingStorey  ( no shape ) :  Section K2
+251  :  IfcBuildingStorey  ( no shape ) :  Section K1
+252  :  IfcBuildingElementProxy  ( extrusion ) :  Structure052
+253  :  IfcBuildingElementProxy  ( extrusion ) :  Structure053
+254  :  IfcBuildingElementProxy  ( extrusion ) :  Structure054
+255  :  IfcBuildingElementProxy  ( extrusion ) :  Structure055
+256  :  IfcBuildingElementProxy  ( extrusion ) :  Structure056
+257  :  IfcBuildingElementProxy  ( extrusion ) :  Structure057
+258  :  IfcBuildingElementProxy  ( extrusion ) :  Structure058
+259  :  IfcBuildingElementProxy  ( extrusion ) :  Structure059
+260  :  IfcBuildingElementProxy  ( extrusion ) :  Structure060
+261  :  IfcBuildingElementProxy  ( extrusion ) :  Structure061
+262  :  IfcBuildingElementProxy  ( extrusion ) :  Structure062
+263  :  IfcBuildingElementProxy  ( extrusion ) :  Window glass004
+264  :  IfcBuildingElementProxy  ( extrusion ) :  Window glass003
+265  :  IfcBuildingElementProxy  ( no shape ) :  Mirror of Wire169002038
+266  :  IfcBuildingElementProxy  ( brep ) :  Structure072
+267  :  IfcBuildingElementProxy  ( brep ) :  Mirror of Structure073
+268  :  IfcBuildingElementProxy  ( brep ) :  Offset
+269  :  IfcBuildingElementProxy  ( extrusion ) :  new test 
+270  :  IfcBuildingElementProxy  ( extrusion ) :  test of sections extrude
+
+model B
+
+1    :  IfcBuildingStorey  ( no shape ) :  Section E2
+2    :  IfcBuildingElementProxy  ( extrusion ) :  Tread support009
+3    :  IfcBuildingElementProxy  ( brep ) :  Structure668217098
+4    :  IfcBuildingElementProxy  ( extrusion ) :  Tread003
+5    :  IfcBuildingElementProxy  ( clone ) :  Tread004
+6    :  IfcBuildingElementProxy  ( clone ) :  Tread005
+7    :  IfcBuildingElementProxy  ( brep ) :  Structure668217099
+8    :  IfcBuildingElementProxy  ( extrusion ) :  Tread support010
+9    :  IfcBuildingElementProxy  ( clone ) :  Tread support011
+10   :  IfcBuildingElementProxy  ( clone ) :  Tread support012
+11   :  IfcBuildingElementProxy  ( clone ) :  Tread support013
+12   :  IfcBuildingElementProxy  ( clone ) :  Tread support014
+13   :  IfcBuildingElementProxy  ( clone ) :  Tread support015
+14   :  IfcBuildingElementProxy  ( clone ) :  Tread support016
+15   :  IfcBuildingElementProxy  ( clone ) :  Tread support017
+16   :  IfcBuildingStorey  ( no shape ) :  Section A2
+17   :  IfcBuildingElementProxy  ( extrusion ) :  Roofing014
+18   :  IfcBuildingElementProxy  ( extrusion ) :  Flashing018
+19   :  IfcBuildingElementProxy  ( extrusion ) :  Joint038
+20   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood114
+21   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile096
+22   :  IfcBuildingElementProxy  ( extrusion ) :  Roof004
+23   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile097
+24   :  IfcBuildingElementProxy  ( extrusion ) :  Membrane069
+25   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile098
+26   :  IfcBuildingElementProxy  ( clone ) :  Roofing015
+27   :  IfcBuildingElementProxy  ( extrusion ) :  Framing066
+28   :  IfcBuildingElementProxy  ( clone ) :  Framing067
+29   :  IfcBuildingElementProxy  ( clone ) :  Framing068
+30   :  IfcBuildingElementProxy  ( extrusion ) :  Framing069
+31   :  IfcBuildingElementProxy  ( brep ) :  Window frame008
+32   :  IfcBuildingElementProxy  ( brep ) :  Window frame009
+33   :  IfcBuildingElementProxy  ( clone ) :  Window frame010
+34   :  IfcBuildingElementProxy  ( clone ) :  Window frame011
+35   :  IfcBuildingElementProxy  ( extrusion ) :  Glass019
+36   :  IfcBuildingElementProxy  ( clone ) :  Glass020
+37   :  IfcBuildingElementProxy  ( extrusion ) :  Glass021
+38   :  IfcBuildingElementProxy  ( clone ) :  Glass022
+39   :  IfcBuildingElementProxy  ( extrusion ) :  Glass023
+40   :  IfcBuildingElementProxy  ( clone ) :  Glass024
+41   :  IfcBuildingElementProxy  ( extrusion ) :  Framing070
+42   :  IfcBuildingElementProxy  ( extrusion ) :  Insulation021
+43   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood106
+44   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum025
+45   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood107
+46   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood108
+47   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood115
+48   :  IfcBuildingElementProxy  ( clone ) :  Plywood116
+49   :  IfcBuildingElementProxy  ( clone ) :  Plywood117
+50   :  IfcBuildingElementProxy  ( extrusion ) :  Structure064
+51   :  IfcBuildingElementProxy  ( clone ) :  Structure065
+52   :  IfcBuildingElementProxy  ( extrusion ) :  Insulation
+53   :  IfcBuildingElementProxy  ( extrusion ) :  Flashing019
+54   :  IfcBuildingElementProxy  ( extrusion ) :  Flashing020
+55   :  IfcBuildingElementProxy  ( extrusion ) :  Joint039
+56   :  IfcBuildingElementProxy  ( extrusion ) :  Sill
+57   :  IfcBuildingElementProxy  ( extrusion ) :  Membrane070
+58   :  IfcBuildingElementProxy  ( extrusion ) :  Structure066
+59   :  IfcBuildingElementProxy  ( extrusion ) :  Stucco030
+60   :  IfcBuildingElementProxy  ( extrusion ) :  Soffit005
+61   :  IfcBuildingElementProxy  ( extrusion ) :  Blocking109
+62   :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile099
+63   :  IfcBuildingElementProxy  ( extrusion ) :  Flashing021
+64   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum026
+65   :  IfcBuildingElementProxy  ( extrusion ) :  sill plate
+66   :  IfcBuildingStorey  ( no shape ) :  Section G1
+67   :  IfcBuildingElementProxy  ( extrusion ) :  Structure061
+68   :  IfcBuildingElementProxy  ( extrusion ) :  Framing
+69   :  IfcBuildingElementProxy  ( clone ) :  Framing065
+70   :  IfcBuildingElementProxy  ( extrusion ) :  Glass018
+71   :  IfcBuildingElementProxy  ( extrusion ) :  Joint026
+72   :  IfcBuildingElementProxy  ( triangulated ) :  Metal profile
+73   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood094
+74   :  IfcBuildingElementProxy  ( clone ) :  Joint027
+75   :  IfcBuildingElementProxy  ( extrusion ) :  Blocking089
+76   :  IfcBuildingElementProxy  ( clone ) :  Blocking090
+77   :  IfcBuildingElementProxy  ( clone ) :  Blocking091
+78   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum023
+79   :  IfcBuildingElementProxy  ( clone ) :  Blocking092
+80   :  IfcBuildingElementProxy  ( extrusion ) :  Member
+81   :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum024
+82   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood095
+83   :  IfcBuildingElementProxy  ( clone ) :  Plywood096
+84   :  IfcBuildingElementProxy  ( extrusion ) :  Structure063
+85   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood100
+86   :  IfcBuildingElementProxy  ( extrusion ) :  Flooring
+87   :  IfcBuildingElementProxy  ( extrusion ) :  Flooring008
+88   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood099
+89   :  IfcBuildingElementProxy  ( extrusion ) :  Footer005
+90   :  IfcBuildingElementProxy  ( extrusion ) :  Blocking094
+91   :  IfcBuildingElementProxy  ( clone ) :  Blocking095
+92   :  IfcBuildingElementProxy  ( clone ) :  Blocking096
+93   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood101
+94   :  IfcBuildingElementProxy  ( clone ) :  Plywood102
+95   :  IfcBuildingElementProxy  ( extrusion ) :  Plywood103
+96   :  IfcBuildingElementProxy  ( clone ) :  Plywood104
+97   :  IfcBuildingElementProxy  ( extrusion ) :  Joint032
+98   :  IfcBuildingElementProxy  ( clone ) :  Joint033
+99   :  IfcBuildingElementProxy  ( clone ) :  Blocking097
+100  :  IfcBuildingElementProxy  ( clone ) :  Blocking098
+101  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking101
+102  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking102
+103  :  IfcBuildingElementProxy  ( extrusion ) :  METAL HAT CHANNEL
+104  :  IfcBuildingElementProxy  ( extrusion ) :  INT. 1/2" GLASS
+105  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood105
+106  :  IfcBuildingElementProxy  ( clone ) :  Joint034
+107  :  IfcBuildingElementProxy  ( clone ) :  Joint035
+108  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood110
+109  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood109
+110  :  IfcBuildingElementProxy  ( clone ) :  Plywood111
+111  :  IfcBuildingElementProxy  ( brep ) :  Structure067
+112  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood093
+113  :  IfcBuildingElementProxy  ( extrusion ) :  metal profile
+114  :  IfcBuildingElementProxy  ( extrusion ) :  gasket
+115  :  IfcBuildingElementProxy  ( clone ) :  gasket001
+116  :  IfcBuildingElementProxy  ( extrusion ) :  Bolt
+117  :  IfcBuildingElementProxy  ( extrusion ) :  Bolt001
+118  :  IfcBuildingElementProxy  ( clone ) :  Bolt002
+119  :  IfcBuildingElementProxy  ( clone ) :  Bolt003
+120  :  IfcBuildingElementProxy  ( extrusion ) :  Metal plate
+121  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking119
+122  :  IfcBuildingStorey  ( no shape ) :  Section C1
+123  :  IfcBuildingElementProxy  ( extrusion ) :  Structure075
+124  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile100
+125  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco031
+126  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood118
+127  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco032
+128  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile101
+129  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum027
+130  :  IfcBuildingElementProxy  ( extrusion ) :  Door frame
+131  :  IfcBuildingElementProxy  ( clone ) :  Door frame001
+132  :  IfcBuildingElementProxy  ( extrusion ) :  Door frame002
+133  :  IfcBuildingElementProxy  ( extrusion ) :  Door louver
+134  :  IfcBuildingElementProxy  ( extrusion ) :  Pivot001
+135  :  IfcBuildingElementProxy  ( extrusion ) :  Pivot002
+136  :  IfcBuildingElementProxy  ( clone ) :  Pivot003
+137  :  IfcBuildingElementProxy  ( clone ) :  Pivot004
+138  :  IfcBuildingElementProxy  ( clone ) :  Pivot005
+139  :  IfcBuildingElementProxy  ( clone ) :  Pivot006
+140  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane071
+141  :  IfcBuildingElementProxy  ( extrusion ) :  Framing071
+142  :  IfcBuildingElementProxy  ( clone ) :  Pivot007
+143  :  IfcBuildingElementProxy  ( clone ) :  Pivot008
+144  :  IfcBuildingElementProxy  ( extrusion ) :  plywood004
+145  :  IfcBuildingElementProxy  ( extrusion ) :  tab upper
+146  :  IfcBuildingElementProxy  ( extrusion ) :  tab lower
+147  :  IfcBuildingElementProxy  ( extrusion ) :  SLAB
+148  :  IfcBuildingElementProxy  ( extrusion ) :  Sand003
+149  :  IfcBuildingElementProxy  ( extrusion ) :  gravel
+150  :  IfcBuildingElementProxy  ( extrusion ) :  Joint053
+151  :  IfcBuildingElementProxy  ( extrusion ) :  Joint054
+152  :  IfcBuildingElementProxy  ( extrusion ) :  slab
+153  :  IfcBuildingElementProxy  ( extrusion ) :  sand
+154  :  IfcBuildingElementProxy  ( extrusion ) :  gravel001
+155  :  IfcBuildingStorey  ( no shape ) :  Section D1
+156  :  IfcBuildingElementProxy  ( clone ) :  Window frame012
+157  :  IfcBuildingElementProxy  ( clone ) :  Window frame013
+158  :  IfcBuildingElementProxy  ( clone ) :  Glass027
+159  :  IfcBuildingElementProxy  ( clone ) :  Glass028
+160  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood120
+161  :  IfcBuildingElementProxy  ( extrusion ) :  Sill001
+162  :  IfcBuildingElementProxy  ( extrusion ) :  Glass026
+163  :  IfcBuildingElementProxy  ( clone ) :  Glass029
+164  :  IfcBuildingElementProxy  ( extrusion ) :  Flashing023
+165  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane072
+166  :  IfcBuildingElementProxy  ( clone ) :  Membrane073
+167  :  IfcBuildingElementProxy  ( clone ) :  Joint040
+168  :  IfcBuildingElementProxy  ( clone ) :  Joint041
+169  :  IfcBuildingElementProxy  ( extrusion ) :  Joint042
+170  :  IfcBuildingElementProxy  ( extrusion ) :  Structure668217088
+171  :  IfcBuildingElementProxy  ( extrusion ) :  Structure068
+172  :  IfcBuildingElementProxy  ( clone ) :  Joint043
+173  :  IfcBuildingElementProxy  ( clone ) :  Roofing017
+174  :  IfcBuildingElementProxy  ( clone ) :  Joint044
+175  :  IfcBuildingElementProxy  ( clone ) :  Plywood121
+176  :  IfcBuildingElementProxy  ( clone ) :  Metal profile106
+177  :  IfcBuildingElementProxy  ( clone ) :  Roof006
+178  :  IfcBuildingElementProxy  ( clone ) :  Metal profile107
+179  :  IfcBuildingElementProxy  ( clone ) :  Metal profile108
+180  :  IfcBuildingElementProxy  ( clone ) :  Roofing018
+181  :  IfcBuildingElementProxy  ( clone ) :  Soffit006
+182  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane074
+183  :  IfcBuildingElementProxy  ( extrusion ) :  Framing073
+184  :  IfcBuildingElementProxy  ( extrusion ) :  Framing074
+185  :  IfcBuildingElementProxy  ( extrusion ) :  Flashing024
+186  :  IfcBuildingElementProxy  ( clone ) :  Framing075
+187  :  IfcBuildingElementProxy  ( clone ) :  Glass030
+188  :  IfcBuildingElementProxy  ( clone ) :  Window frame014
+189  :  IfcBuildingElementProxy  ( clone ) :  Glass031
+190  :  IfcBuildingElementProxy  ( clone ) :  Glass032
+191  :  IfcBuildingElementProxy  ( clone ) :  Window frame015
+192  :  IfcBuildingElementProxy  ( clone ) :  Glass033
+193  :  IfcBuildingElementProxy  ( clone ) :  Joint045
+194  :  IfcBuildingElementProxy  ( extrusion ) :  sill pan
+195  :  IfcBuildingStorey  ( no shape ) :  Section D2
+196  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking110
+197  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile109
+198  :  IfcBuildingElementProxy  ( extrusion ) :  Structure069
+199  :  IfcBuildingElementProxy  ( extrusion ) :  Structure668217089
+200  :  IfcBuildingElementProxy  ( extrusion ) :  Structure668217090
+201  :  IfcBuildingElementProxy  ( extrusion ) :  Structure668217091
+202  :  IfcBuildingElementProxy  ( extrusion ) :  Water
+203  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane075
+204  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco034
+205  :  IfcBuildingElementProxy  ( clone ) :  Structure668217092
+206  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile110
+207  :  IfcBuildingElementProxy  ( extrusion ) :  Brick
+208  :  IfcBuildingElementProxy  ( clone ) :  Brick001
+209  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood122
+210  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane076
+211  :  IfcBuildingElementProxy  ( extrusion ) :  Framing076
+212  :  IfcBuildingElementProxy  ( extrusion ) :  Insulation023
+213  :  IfcBuildingElementProxy  ( clone ) :  Structure668217093
+214  :  IfcBuildingElementProxy  ( clone ) :  Structure668217094
+215  :  IfcBuildingElementProxy  ( clone ) :  Structure076
+216  :  IfcBuildingElementProxy  ( clone ) :  Window frame016
+217  :  IfcBuildingElementProxy  ( clone ) :  Glass034
+218  :  IfcBuildingElementProxy  ( clone ) :  Glass035
+219  :  IfcBuildingElementProxy  ( clone ) :  Metal profile111
+220  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco
+221  :  IfcBuildingElementProxy  ( extrusion ) :  Structure077
+222  :  IfcBuildingElementProxy  ( extrusion ) :  Footer008
+223  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco035
+224  :  IfcBuildingElementProxy  ( clone ) :  Metal profile112
+225  :  IfcBuildingElementProxy  ( clone ) :  Brick002
+226  :  IfcBuildingElementProxy  ( clone ) :  Brick003
+227  :  IfcBuildingElementProxy  ( clone ) :  Joint046
+228  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood123
+229  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking111
+230  :  IfcBuildingElementProxy  ( clone ) :  Blocking099
+231  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane077
+232  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood124
+233  :  IfcBuildingElementProxy  ( extrusion ) :  Sill003
+234  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood125
+235  :  IfcBuildingElementProxy  ( extrusion ) :  Sill002
+236  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum028
+237  :  IfcBuildingElementProxy  ( clone ) :  Framing077
+238  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum029
+239  :  IfcBuildingElementProxy  ( extrusion ) :  flashing001
+240  :  IfcBuildingStorey  ( no shape ) :  Section E1
+241  :  IfcBuildingElementProxy  ( extrusion ) :  Window frame019
+242  :  IfcBuildingElementProxy  ( extrusion ) :  Window frame020
+243  :  IfcBuildingElementProxy  ( extrusion ) :  Glass036
+244  :  IfcBuildingElementProxy  ( clone ) :  Glass037
+245  :  IfcBuildingElementProxy  ( clone ) :  Glass038
+246  :  IfcBuildingElementProxy  ( clone ) :  Glass039
+247  :  IfcBuildingElementProxy  ( extrusion ) :  Structure078
+248  :  IfcBuildingElementProxy  ( extrusion ) :  Structure079
+249  :  IfcBuildingElementProxy  ( extrusion ) :  Structure080
+250  :  IfcBuildingElementProxy  ( extrusion ) :  plywood
+251  :  IfcBuildingElementProxy  ( extrusion ) :  plywood002
+252  :  IfcBuildingElementProxy  ( extrusion ) :  flooring
+253  :  IfcBuildingElementProxy  ( clone ) :  Membrane078
+254  :  IfcBuildingElementProxy  ( clone ) :  Joint047
+255  :  IfcBuildingElementProxy  ( clone ) :  Membrane079
+256  :  IfcBuildingElementProxy  ( extrusion ) :  blocking
+257  :  IfcBuildingElementProxy  ( extrusion ) :  Flashing026
+258  :  IfcBuildingElementProxy  ( extrusion ) :  Stone022
+259  :  IfcBuildingElementProxy  ( clone ) :  Stone023
+260  :  IfcBuildingElementProxy  ( extrusion ) :  Bison pedestal004
+261  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane080
+262  :  IfcBuildingElementProxy  ( clone ) :  Bison pedestal005
+263  :  IfcBuildingElementProxy  ( clone ) :  Structure081
+264  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile114
+265  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking112
+266  :  IfcBuildingElementProxy  ( extrusion ) :  Structure668217095
+267  :  IfcBuildingElementProxy  ( extrusion ) :  Structure668217096
+268  :  IfcBuildingElementProxy  ( extrusion ) :  Structure668217097
+269  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane081
+270  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood127
+271  :  IfcBuildingElementProxy  ( extrusion ) :  Framing078
+272  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood128
+273  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood129
+274  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco036
+275  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL STOP006
+276  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL STOP007
+277  :  IfcBuildingElementProxy  ( extrusion ) :  BITUMEN CAP SHEET003
+278  :  IfcBuildingElementProxy  ( extrusion ) :  INTERPLY003
+279  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL-STOP003
+280  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking113
+281  :  IfcBuildingElementProxy  ( clone ) :  Blocking114
+282  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco037
+283  :  IfcBuildingElementProxy  ( extrusion ) :  FIRESTONE INSULATION003
+284  :  IfcBuildingElementProxy  ( extrusion ) :  COVER BOARD002
+285  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL BALLAST004
+286  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane082
+287  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane083
+288  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane084
+289  :  IfcBuildingElementProxy  ( extrusion ) :  gypsum
+290  :  IfcBuildingElementProxy  ( clone ) :  Joint048
+291  :  IfcBuildingElementProxy  ( clone ) :  Joint049
+292  :  IfcBuildingElementProxy  ( clone ) :  Blocking116
+293  :  IfcBuildingElementProxy  ( clone ) :  Blocking115
+294  :  IfcBuildingElementProxy  ( clone ) :  Blocking117
+295  :  IfcBuildingStorey  ( no shape ) :  Section F2
+296  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood088
+297  :  IfcBuildingElementProxy  ( clone ) :  Blocking082
+298  :  IfcBuildingElementProxy  ( clone ) :  Blocking083
+299  :  IfcBuildingElementProxy  ( clone ) :  Blocking084
+300  :  IfcBuildingElementProxy  ( clone ) :  Blocking087
+301  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum022
+302  :  IfcBuildingElementProxy  ( extrusion ) :  Structure051
+303  :  IfcBuildingElementProxy  ( extrusion ) :  Structure052
+304  :  IfcBuildingElementProxy  ( clone ) :  Structure053
+305  :  IfcBuildingElementProxy  ( clone ) :  Structure054
+306  :  IfcBuildingElementProxy  ( clone ) :  Structure055
+307  :  IfcBuildingElementProxy  ( clone ) :  Blocking086
+308  :  IfcBuildingElementProxy  ( reusing brep ) :  Structure056
+309  :  IfcBuildingElementProxy  ( extrusion ) :  Tread
+310  :  IfcBuildingElementProxy  ( clone ) :  Tread001
+311  :  IfcBuildingElementProxy  ( clone ) :  Tread002
+312  :  IfcBuildingElementProxy  ( reusing brep ) :  Structure057
+313  :  IfcBuildingElementProxy  ( extrusion ) :  Tread support
+314  :  IfcBuildingElementProxy  ( extrusion ) :  Tread support001
+315  :  IfcBuildingElementProxy  ( clone ) :  Tread support002
+316  :  IfcBuildingElementProxy  ( clone ) :  Tread support003
+317  :  IfcBuildingElementProxy  ( clone ) :  Tread support004
+318  :  IfcBuildingElementProxy  ( clone ) :  Tread support005
+319  :  IfcBuildingElementProxy  ( brep ) :  Glass
+320  :  IfcBuildingElementProxy  ( brep ) :  Structure058
+321  :  IfcBuildingElementProxy  ( clone ) :  Tread support006
+322  :  IfcBuildingElementProxy  ( clone ) :  Tread support007
+323  :  IfcBuildingElementProxy  ( clone ) :  Tread support008
+324  :  IfcBuildingElementProxy  ( brep ) :  Glass004
+325  :  IfcBuildingElementProxy  ( brep ) :  Structure059
+326  :  IfcBuildingElementProxy  ( extrusion ) :  Window frame
+327  :  IfcBuildingElementProxy  ( clone ) :  Window frame001
+328  :  IfcBuildingElementProxy  ( extrusion ) :  Glass006
+329  :  IfcBuildingElementProxy  ( clone ) :  Glass007
+330  :  IfcBuildingElementProxy  ( clone ) :  Glass008
+331  :  IfcBuildingElementProxy  ( clone ) :  Glass009
+332  :  IfcBuildingElementProxy  ( clone ) :  Window frame002
+333  :  IfcBuildingElementProxy  ( clone ) :  Glass010
+334  :  IfcBuildingElementProxy  ( clone ) :  Glass011
+335  :  IfcBuildingElementProxy  ( extrusion ) :  Structure060
+336  :  IfcBuildingElementProxy  ( extrusion ) :  Window frame003
+337  :  IfcBuildingElementProxy  ( extrusion ) :  Glass012
+338  :  IfcBuildingElementProxy  ( clone ) :  Glass013
+339  :  IfcBuildingElementProxy  ( clone ) :  Window frame004
+340  :  IfcBuildingElementProxy  ( clone ) :  Window frame005
+341  :  IfcBuildingElementProxy  ( extrusion ) :  Glass014
+342  :  IfcBuildingElementProxy  ( clone ) :  Glass015
+343  :  IfcBuildingElementProxy  ( clone ) :  Glass016
+344  :  IfcBuildingElementProxy  ( clone ) :  Glass017
+345  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood112
+346  :  IfcBuildingElementProxy  ( triangulated ) :  Corner Bead
+347  :  IfcBuildingElementProxy  ( extrusion ) :  FASTENER
+348  :  IfcBuildingElementProxy  ( clone ) :  FASTENER001
+349  :  IfcBuildingElementProxy  ( extrusion ) :  SEALANT
+350  :  IfcBuildingElementProxy  ( extrusion ) :  FASTENER005
+351  :  IfcBuildingElementProxy  ( clone ) :  FASTENER006
+352  :  IfcBuildingElementProxy  ( extrusion ) :  RIVETS
+353  :  IfcBuildingElementProxy  ( extrusion ) :  SEALANT002
+354  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane066
+355  :  IfcBuildingElementProxy  ( extrusion ) :  RAKE WALL TRIM
+356  :  IfcBuildingElementProxy  ( extrusion ) :  RECEIVER TRIM001
+357  :  IfcBuildingElementProxy  ( extrusion ) :  BEND PANEL001
+358  :  IfcBuildingElementProxy  ( extrusion ) :  BEND PANEL005
+359  :  IfcBuildingElementProxy  ( extrusion ) :  BEND PANEL004
+360  :  IfcBuildingElementProxy  ( extrusion ) :  Structure070
+361  :  IfcBuildingElementProxy  ( extrusion ) :  Structure071
+362  :  IfcBuildingElementProxy  ( extrusion ) :  FRAMING
+363  :  IfcBuildingElementProxy  ( clone ) :  FRAMING001
+364  :  IfcBuildingElementProxy  ( clone ) :  FRAMING002
+365  :  IfcBuildingElementProxy  ( clone ) :  FRAMING003
+366  :  IfcBuildingElementProxy  ( clone ) :  FRAMING004
+367  :  IfcBuildingElementProxy  ( clone ) :  FRAMING005
+368  :  IfcBuildingElementProxy  ( clone ) :  FRAMING006
+369  :  IfcBuildingElementProxy  ( clone ) :  FRAMING007
+370  :  IfcBuildingElementProxy  ( clone ) :  FRAMING008
+371  :  IfcBuildingElementProxy  ( clone ) :  FRAMING009
+372  :  IfcBuildingElementProxy  ( clone ) :  FRAMING010
+373  :  IfcBuildingElementProxy  ( clone ) :  FRAMING011
+374  :  IfcBuildingElementProxy  ( clone ) :  FRAMING012
+375  :  IfcBuildingElementProxy  ( extrusion ) :  Structure072
+376  :  IfcBuildingElementProxy  ( extrusion ) :  Structure073
+377  :  IfcBuildingElementProxy  ( extrusion ) :  Flashing017
+378  :  IfcBuildingElementProxy  ( clone ) :  Joint036
+379  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile092
+380  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane067
+381  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile093
+382  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile094
+383  :  IfcBuildingElementProxy  ( clone ) :  Blocking103
+384  :  IfcBuildingElementProxy  ( clone ) :  Blocking104
+385  :  IfcBuildingElementProxy  ( clone ) :  Blocking105
+386  :  IfcBuildingElementProxy  ( clone ) :  Blocking106
+387  :  IfcBuildingElementProxy  ( clone ) :  Blocking107
+388  :  IfcBuildingElementProxy  ( extrusion ) :  SILL PAN002
+389  :  IfcBuildingElementProxy  ( clone ) :  SEALANT003
+390  :  IfcBuildingElementProxy  ( clone ) :  BEND PANEL006
+391  :  IfcBuildingElementProxy  ( clone ) :  Structure668217103
+392  :  IfcBuildingElementProxy  ( extrusion ) :  Roof panel
+393  :  IfcBuildingElementProxy  ( clone ) :  SEALANT004
+394  :  IfcBuildingElementProxy  ( clone ) :  Structure668217104
+395  :  IfcBuildingElementProxy  ( clone ) :  Roof panel001
+396  :  IfcBuildingElementProxy  ( clone ) :  Roof panel002
+397  :  IfcBuildingElementProxy  ( clone ) :  Structure668217105
+398  :  IfcBuildingElementProxy  ( clone ) :  SEALANT005
+399  :  IfcBuildingElementProxy  ( clone ) :  Roof panel003
+400  :  IfcBuildingElementProxy  ( clone ) :  Structure668217106
+401  :  IfcBuildingElementProxy  ( clone ) :  SEALANT006
+402  :  IfcBuildingElementProxy  ( clone ) :  Structure668217107
+403  :  IfcBuildingElementProxy  ( clone ) :  Roof panel004
+404  :  IfcBuildingElementProxy  ( clone ) :  SEALANT007
+405  :  IfcBuildingElementProxy  ( clone ) :  Structure668217108
+406  :  IfcBuildingElementProxy  ( clone ) :  Roof panel005
+407  :  IfcBuildingElementProxy  ( clone ) :  SEALANT008
+408  :  IfcBuildingElementProxy  ( extrusion ) :  plywood003
+409  :  IfcBuildingElementProxy  ( extrusion ) :  soffit001
+410  :  IfcBuildingElementProxy  ( extrusion ) :  gypsum001
+411  :  IfcBuildingElementProxy  ( clone ) :  Joint050
+412  :  IfcBuildingElementProxy  ( clone ) :  Joint051
+413  :  IfcBuildingElementProxy  ( brep ) :  Window frame023
+414  :  IfcBuildingElementProxy  ( clone ) :  Joint052
+415  :  IfcBuildingElementProxy  ( clone ) :  Window frame024
+416  :  IfcBuildingElementProxy  ( extrusion ) :  Glass044
+417  :  IfcBuildingElementProxy  ( clone ) :  Glass045
+418  :  IfcBuildingElementProxy  ( extrusion ) :  flashing
+419  :  IfcBuildingElementProxy  ( brep ) :  Gasket
+420  :  IfcBuildingElementProxy  ( brep ) :  Gasket001
+421  :  IfcBuildingElementProxy  ( brep ) :  Gasket002
+422  :  IfcBuildingElementProxy  ( brep ) :  Gasket003
+423  :  IfcBuildingStorey  ( no shape ) :  Section F1
+424  :  IfcBuildingElementProxy  ( clone ) :  Blocking041
+425  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile052
+426  :  IfcBuildingElementProxy  ( clone ) :  Metal profile053
+427  :  IfcBuildingElementProxy  ( clone ) :  Metal profile054
+428  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco023
+429  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood073
+430  :  IfcBuildingElementProxy  ( clone ) :  Blocking042
+431  :  IfcBuildingElementProxy  ( clone ) :  Blocking043
+432  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood074
+433  :  IfcBuildingElementProxy  ( extrusion ) :  Framing056
+434  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood077
+435  :  IfcBuildingElementProxy  ( extrusion ) :  Structure040
+436  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood
+437  :  IfcBuildingElementProxy  ( extrusion ) :  Structure041
+438  :  IfcBuildingElementProxy  ( clone ) :  Structure044
+439  :  IfcBuildingElementProxy  ( extrusion ) :  Structure045
+440  :  IfcBuildingElementProxy  ( extrusion ) :  Structure046
+441  :  IfcBuildingElementProxy  ( extrusion ) :  Structure047
+442  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane032
+443  :  IfcBuildingElementProxy  ( clone ) :  Plywood076
+444  :  IfcBuildingElementProxy  ( clone ) :  Blocking044
+445  :  IfcBuildingElementProxy  ( extrusion ) :  Framing058
+446  :  IfcBuildingElementProxy  ( clone ) :  Blocking045
+447  :  IfcBuildingElementProxy  ( clone ) :  Blocking046
+448  :  IfcBuildingElementProxy  ( clone ) :  Plywood081
+449  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood082
+450  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood075
+451  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco024
+452  :  IfcBuildingElementProxy  ( clone ) :  Metal profile061
+453  :  IfcBuildingElementProxy  ( clone ) :  Blocking047
+454  :  IfcBuildingElementProxy  ( clone ) :  Blocking048
+455  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum
+456  :  IfcBuildingElementProxy  ( extrusion ) :  Footer
+457  :  IfcBuildingElementProxy  ( extrusion ) :  Structure048
+458  :  IfcBuildingElementProxy  ( extrusion ) :  Framing059
+459  :  IfcBuildingElementProxy  ( clone ) :  Framing060
+460  :  IfcBuildingElementProxy  ( clone ) :  Framing061
+461  :  IfcBuildingElementProxy  ( clone ) :  Framing062
+462  :  IfcBuildingElementProxy  ( clone ) :  Framing063
+463  :  IfcBuildingElementProxy  ( extrusion ) :  Roofing004
+464  :  IfcBuildingElementProxy  ( clone ) :  Roofing005
+465  :  IfcBuildingElementProxy  ( extrusion ) :  Flashing012
+466  :  IfcBuildingElementProxy  ( clone ) :  Joint020
+467  :  IfcBuildingElementProxy  ( clone ) :  Joint
+468  :  IfcBuildingElementProxy  ( clone ) :  Framing064
+469  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood084
+470  :  IfcBuildingElementProxy  ( extrusion ) :  Soffit004
+471  :  IfcBuildingElementProxy  ( clone ) :  Roofing006
+472  :  IfcBuildingElementProxy  ( clone ) :  Roofing007
+473  :  IfcBuildingElementProxy  ( clone ) :  Roofing008
+474  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile064
+475  :  IfcBuildingElementProxy  ( extrusion ) :  Joint021
+476  :  IfcBuildingElementProxy  ( extrusion ) :  Window glass
+477  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood083
+478  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile085
+479  :  IfcBuildingElementProxy  ( extrusion ) :  Roof001
+480  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile086
+481  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane046
+482  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile087
+483  :  IfcBuildingElementProxy  ( clone ) :  Blocking073
+484  :  IfcBuildingElementProxy  ( clone ) :  Blocking074
+485  :  IfcBuildingElementProxy  ( clone ) :  Joint024
+486  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL STOP
+487  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL STOP001
+488  :  IfcBuildingElementProxy  ( extrusion ) :  BITUMEN CAP SHEET
+489  :  IfcBuildingElementProxy  ( extrusion ) :  INTERPLY
+490  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS008
+491  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS011
+492  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS010
+493  :  IfcBuildingElementProxy  ( extrusion ) :  STAINLESS STEEL NAILS009
+494  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL-STOP
+495  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking071
+496  :  IfcBuildingElementProxy  ( clone ) :  Blocking076
+497  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco026
+498  :  IfcBuildingElementProxy  ( extrusion ) :  FIRESTONE INSULATION001
+499  :  IfcBuildingElementProxy  ( extrusion ) :  COVER BOARD
+500  :  IfcBuildingElementProxy  ( extrusion ) :  GRAVEL BALLAST002
+501  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane052
+502  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane053
+503  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane054
+504  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane058
+505  :  IfcBuildingElementProxy  ( clone ) :  Blocking077
+506  :  IfcBuildingElementProxy  ( clone ) :  Blocking078
+507  :  IfcBuildingElementProxy  ( clone ) :  Membrane056
+508  :  IfcBuildingElementProxy  ( clone ) :  GRAVEL-STOP001
+509  :  IfcBuildingElementProxy  ( clone ) :  STAINLESS STEEL NAILS012
+510  :  IfcBuildingElementProxy  ( clone ) :  STAINLESS STEEL NAILS013
+511  :  IfcBuildingElementProxy  ( clone ) :  GRAVEL STOP002
+512  :  IfcBuildingElementProxy  ( clone ) :  GRAVEL STOP003
+513  :  IfcBuildingElementProxy  ( clone ) :  INTERPLY001
+514  :  IfcBuildingElementProxy  ( clone ) :  Stucco027
+515  :  IfcBuildingElementProxy  ( clone ) :  Stucco028
+516  :  IfcBuildingElementProxy  ( clone ) :  INTERPLY002
+517  :  IfcBuildingElementProxy  ( clone ) :  GRAVEL STOP004
+518  :  IfcBuildingElementProxy  ( clone ) :  GRAVEL STOP005
+519  :  IfcBuildingElementProxy  ( clone ) :  STAINLESS STEEL NAILS014
+520  :  IfcBuildingElementProxy  ( clone ) :  STAINLESS STEEL NAILS015
+521  :  IfcBuildingElementProxy  ( clone ) :  GRAVEL-STOP002
+522  :  IfcBuildingElementProxy  ( clone ) :  Membrane057
+523  :  IfcBuildingElementProxy  ( clone ) :  Blocking079
+524  :  IfcBuildingElementProxy  ( clone ) :  Blocking080
+525  :  IfcBuildingElementProxy  ( clone ) :  BITUMEN CAP SHEET001
+526  :  IfcBuildingElementProxy  ( clone ) :  BITUMEN CAP SHEET002
+527  :  IfcBeam  ( no shape ) :  Structure
+528  :  IfcBeam  ( no shape ) :  Structure050
+529  :  IfcBuildingElementProxy  ( extrusion ) :  Gravel
+530  :  IfcBuildingElementProxy  ( clone ) :  Gravel004
+531  :  IfcBuildingElementProxy  ( extrusion ) :  COVER BOARD001
+532  :  IfcBuildingElementProxy  ( extrusion ) :  FIRESTONE INSULATION002
+533  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane059
+534  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane060
+535  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane061
+536  :  IfcBuildingElementProxy  ( clone ) :  Membrane062
+537  :  IfcBuildingElementProxy  ( clone ) :  Membrane063
+538  :  IfcBuildingElementProxy  ( clone ) :  Membrane064
+539  :  IfcBuildingElementProxy  ( extrusion ) :  soffit
+540  :  IfcBuildingElementProxy  ( extrusion ) :  Flashing027
+541  :  IfcBuildingElementProxy  ( clone ) :  Window frame021
+542  :  IfcBuildingElementProxy  ( clone ) :  Window glass001
+543  :  IfcBuildingElementProxy  ( clone ) :  Window frame022
+544  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking118
+545  :  IfcBuildingStorey  ( no shape ) :  Section A1
+546  :  IfcBuildingElementProxy  ( extrusion ) :  Slab004
+547  :  IfcBuildingElementProxy  ( extrusion ) :  Gypsum020
+548  :  IfcBuildingElementProxy  ( extrusion ) :  Framing041
+549  :  IfcBuildingElementProxy  ( extrusion ) :  Insulation020
+550  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane014
+551  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane020
+552  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco014
+553  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood065
+554  :  IfcBuildingElementProxy  ( extrusion ) :  Flooring004
+555  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood066
+556  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile025
+557  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane008
+558  :  IfcBuildingElementProxy  ( extrusion ) :  Footer004
+559  :  IfcBuildingElementProxy  ( clone ) :  Sand002
+560  :  IfcBuildingElementProxy  ( extrusion ) :  Gravel003
+561  :  IfcBuildingElementProxy  ( clone ) :  Structure027
+562  :  IfcBuildingElementProxy  ( clone ) :  Structure028
+563  :  IfcBuildingElementProxy  ( clone ) :  Structure029
+564  :  IfcBuildingElementProxy  ( clone ) :  Structure030
+565  :  IfcBuildingElementProxy  ( extrusion ) :  Structure031
+566  :  IfcBuildingElementProxy  ( clone ) :  Structure032
+567  :  IfcBuildingElementProxy  ( clone ) :  Structure033
+568  :  IfcBuildingElementProxy  ( clone ) :  Framing042
+569  :  IfcBuildingElementProxy  ( clone ) :  Framing043
+570  :  IfcBuildingElementProxy  ( clone ) :  Framing044
+571  :  IfcBuildingElementProxy  ( clone ) :  Framing045
+572  :  IfcBuildingElementProxy  ( clone ) :  Framing046
+573  :  IfcBuildingElementProxy  ( clone ) :  Metal profile032
+574  :  IfcBuildingElementProxy  ( extrusion ) :  Stucco015
+575  :  IfcBuildingElementProxy  ( clone ) :  Stucco016
+576  :  IfcBuildingElementProxy  ( clone ) :  Metal profile033
+577  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane023
+578  :  IfcBuildingElementProxy  ( clone ) :  Metal profile034
+579  :  IfcBuildingElementProxy  ( clone ) :  Stucco017
+580  :  IfcBuildingElementProxy  ( clone ) :  Stucco018
+581  :  IfcBuildingElementProxy  ( clone ) :  Plywood067
+582  :  IfcBuildingElementProxy  ( clone ) :  Plywood068
+583  :  IfcBuildingElementProxy  ( extrusion ) :  Framing055
+584  :  IfcBuildingElementProxy  ( clone ) :  Plywood070
+585  :  IfcBuildingElementProxy  ( clone ) :  Stucco019
+586  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood069
+587  :  IfcBuildingElementProxy  ( extrusion ) :  Framing054
+588  :  IfcBuildingElementProxy  ( clone ) :  Glass002
+589  :  IfcBuildingElementProxy  ( extrusion ) :  Flooring005
+590  :  IfcBuildingElementProxy  ( clone ) :  Flooring006
+591  :  IfcBuildingElementProxy  ( extrusion ) :  Earth
+592  :  IfcBuildingElementProxy  ( clone ) :  Roofing
+593  :  IfcBuildingElementProxy  ( clone ) :  Roofing001
+594  :  IfcBuildingElementProxy  ( clone ) :  Roofing002
+595  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood072
+596  :  IfcBuildingElementProxy  ( extrusion ) :  Soffit003
+597  :  IfcBuildingElementProxy  ( clone ) :  Joint019
+598  :  IfcBuildingElementProxy  ( extrusion ) :  CMU002
+599  :  IfcBuildingElementProxy  ( clone ) :  CMU001
+600  :  IfcBuildingElementProxy  ( clone ) :  CMU003
+601  :  IfcBuildingElementProxy  ( clone ) :  CMU
+602  :  IfcBuildingElementProxy  ( extrusion ) :  Stone017
+603  :  IfcBuildingElementProxy  ( extrusion ) :  Stone021
+604  :  IfcBuildingElementProxy  ( extrusion ) :  Stone018
+605  :  IfcBuildingElementProxy  ( extrusion ) :  Stone019
+606  :  IfcBuildingElementProxy  ( extrusion ) :  Stone020
+607  :  IfcBuildingElementProxy  ( extrusion ) :  Mortar bed
+608  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane039
+609  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane040
+610  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking050
+611  :  IfcBuildingElementProxy  ( clone ) :  Blocking051
+612  :  IfcBuildingElementProxy  ( clone ) :  Flashing008
+613  :  IfcBuildingElementProxy  ( clone ) :  Metal profile067
+614  :  IfcBuildingElementProxy  ( clone ) :  Roof
+615  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane041
+616  :  IfcBuildingElementProxy  ( clone ) :  Metal profile072
+617  :  IfcBuildingElementProxy  ( clone ) :  Metal profile073
+618  :  IfcBuildingElementProxy  ( extrusion ) :  Blocking
+619  :  IfcBuildingElementProxy  ( clone ) :  Blocking052
+620  :  IfcBuildingElementProxy  ( clone ) :  Blocking053
+621  :  IfcBuildingElementProxy  ( clone ) :  Blocking054
+622  :  IfcBuildingElementProxy  ( clone ) :  Blocking055
+623  :  IfcBuildingElementProxy  ( clone ) :  Blocking056
+624  :  IfcBuildingElementProxy  ( clone ) :  Blocking057
+625  :  IfcBuildingElementProxy  ( clone ) :  Blocking058
+626  :  IfcBuildingElementProxy  ( extrusion ) :  Sleeper
+627  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood086
+628  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane042
+629  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile074
+630  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile075
+631  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile076
+632  :  IfcBuildingElementProxy  ( extrusion ) :  Flashing
+633  :  IfcBuildingElementProxy  ( clone ) :  Metal profile077
+634  :  IfcBuildingElementProxy  ( clone ) :  Metal profile078
+635  :  IfcBuildingElementProxy  ( clone ) :  Metal profile079
+636  :  IfcBuildingElementProxy  ( clone ) :  Flashing013
+637  :  IfcBuildingElementProxy  ( clone ) :  Membrane043
+638  :  IfcBuildingElementProxy  ( clone ) :  Membrane044
+639  :  IfcBuildingElementProxy  ( clone ) :  Blocking059
+640  :  IfcBuildingElementProxy  ( clone ) :  Blocking060
+641  :  IfcBuildingElementProxy  ( clone ) :  Blocking061
+642  :  IfcBuildingElementProxy  ( clone ) :  Blocking062
+643  :  IfcBuildingElementProxy  ( extrusion ) :  Flooring007
+644  :  IfcBuildingElementProxy  ( extrusion ) :  Pedestal
+645  :  IfcBuildingElementProxy  ( clone ) :  Pedestal001
+646  :  IfcBuildingElementProxy  ( extrusion ) :  Plywood087
+647  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane045
+648  :  IfcBuildingElementProxy  ( clone ) :  Metal profile080
+649  :  IfcBuildingElementProxy  ( clone ) :  Flashing014
+650  :  IfcBuildingElementProxy  ( clone ) :  Metal profile081
+651  :  IfcBuildingElementProxy  ( clone ) :  Metal profile082
+652  :  IfcBuildingElementProxy  ( extrusion ) :  Washer
+653  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile083
+654  :  IfcBuildingElementProxy  ( extrusion ) :  Metal profile084
+655  :  IfcBuildingElementProxy  ( clone ) :  Joint022
+656  :  IfcBuildingElementProxy  ( extrusion ) :  Pedestal003
+657  :  IfcBuildingElementProxy  ( extrusion ) :  Slab
+658  :  IfcBuildingElementProxy  ( extrusion ) :  Footing
+659  :  IfcBuildingElementProxy  ( extrusion ) :  Joint023
+660  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane050
+661  :  IfcBuildingElementProxy  ( extrusion ) :  Membrane051
+662  :  IfcBuildingElementProxy  ( clone ) :  Pedestal002
+No site found. Adding default site
+No building found. Adding default building
+writing  /home/yorik/b.ifc ...
+Compression ratio: 39 %
