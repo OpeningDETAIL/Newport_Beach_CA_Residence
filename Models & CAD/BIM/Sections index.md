@@ -12,12 +12,12 @@
 | G1      | 6             | 3              | all done | Yorik | B        |
 | K1      | 5             | 4              |          |       |          |
 | K2      | 5             | 4              |          |       |          |
-| A2      | 2             | 1              | all done | Yorik | D        |
-| C1      | 4             | 2              | all done | Yorik | D        |
-| D1      | 2             | 2              | all done | Yorik | D        |
-| D2      | 3             | 2              | all done | Yorik | D        |
-| E1      | 5             | 1              | all done | Yorik | D        |
-| E2      | 4             | 4              |          |       |          |
+| A2      | 2             | 1              | all done | Yorik | B        |
+| C1      | 4             | 2              | all done | Yorik | B        |
+| D1      | 2             | 2              | all done | Yorik | B        |
+| D2      | 3             | 2              | all done | Yorik | B        |
+| E1      | 5             | 1              | all done | Yorik | B        |
+| E2      | 4             | 4              | all done | Yorik | B        |
 | F3      | 5             | 5              |          |       |          |
 | H1      | 2             | 2              |          |       |          |
 | J1      | 5             | 1              |          |       |          |
