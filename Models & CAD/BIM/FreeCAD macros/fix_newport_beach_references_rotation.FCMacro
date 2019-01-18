@@ -1,0 +1,9 @@
+import FreeCAD
+rotation = FreeCAD.Rotation(FreeCAD.Vector(0,0,1),29.28)
+position = FreeCAD.Vector(7208.22,19490,0)
+placement = FreeCAD.Placement(position,rotation)
+for name in ["ArchReference","ArchReference001","ArchReference002","ArchReference003","ArchReference004","ArchReference005"]:
+    obj = FreeCAD.ActiveDocument.getObject(name)
+    if obj:
+        obj.Placement = placement
+FreeCAD.ActiveDocument.recompute()
