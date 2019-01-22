@@ -1,0 +1,178 @@
+import FreeCAD,FreeCADGui,Part,Draft,Arch
+from PySide import QtCore,QtGui
+
+# you need two documents open, containing BIM objects with same IDs
+# make the main doc the active one before running this script!
+
+# what will be compared: IDs, geometry, materials. Everything else is discarded.
+
+MOVE_TOLERANCE = 0.2 # the max allowed move in mm
+VOL_TOLERANCE = 100 # the max allowed volume diff in mm^3
+
+documents = FreeCAD.listDocuments()
+
+if len(documents) == 2:
+
+    reply = QtGui.QMessageBox.question(None, "", "The document currently viewed must be your main one. The other contains newer objects that you wish to merge into this one. Make sure only the objects you wish to compare are visible in both. Proceed?", QtGui.QMessageBox.Yes | QtGui.QMessageBox.No, QtGui.QMessageBox.No)
+    if reply == QtGui.QMessageBox.Yes:
+
+        activedoc = FreeCAD.ActiveDocument
+        if list(documents.keys())[0] == activedoc.Name:
+            otherdoc = list(documents.values())[1]
+        else:
+            otherdoc = list(documents.values())[0]
+    
+        # build lists of BIM objects with IFC ID
+    
+        activedocids = {} # main document, the original freecad one
+        for obj in activedoc.Objects:
+            if hasattr(obj,"IfcAttributes") and obj.ViewObject.Visibility:
+                if "IfcUID" in obj.IfcAttributes:
+                    activedocids[obj.IfcAttributes["IfcUID"]] = obj
+    
+        otherdocids = {} # other doc to be merged to the main one
+        for obj in otherdoc.Objects:
+            if hasattr(obj,"IfcAttributes") and obj.ViewObject.Visibility:
+                if "IfcUID" in obj.IfcAttributes:
+                    otherdocids[obj.IfcAttributes["IfcUID"]] = obj
+    
+        toselect = [] # objects to select when finished
+        additions = [] # shapes added
+        subtractions = [] # shapes subtracted
+        modified = [] # objects moved
+        matchanged = [] # object is same, but material changed
+        matchangedghost = []
+    
+        for id,obj in otherdocids.items():
+            if id in activedocids:
+                # this object already exists
+                mainobj = activedocids[id]
+                if hasattr(obj,"Shape") and hasattr(mainobj,"Shape"):
+                    v = (obj.Shape.Volume - mainobj.Shape.Volume)
+                    if v < VOL_TOLERANCE:
+                        # identical shape
+                        l = (obj.Shape.BoundBox.Center.sub(mainobj.Shape.BoundBox.Center)).Length
+                        if l < MOVE_TOLERANCE:
+                            # identical position
+                            if hasattr(obj,"Material") and hasattr(mainobj,"Material") and (obj.Material and mainobj.Material and (obj.Material.Label == mainobj.Material.Label)) or (obj.Material == mainobj.Material):
+                                # same material names
+                                obj.ViewObject.hide()
+                            else:
+                                print("Object",mainobj.Label,"material has changed")
+                                obj.ViewObject.hide() # we hide these objects since the shape hasn't changed but we keep their shapes
+                                matchangedghost.append(obj.Shape)
+                                matchanged.append(obj)
+                        else:
+                            print("Object",mainobj.Label,"position has moved by",l,"mm")
+                            toselect.append(obj)
+                            modified.append(obj.Shape)
+                    else:
+                        print("Object",mainobj.Label,"shape has changed by",v,"mm^3")
+                        toselect.append(obj)
+                        modified.append(obj.Shape)
+                else:
+                    print("Object",mainobj.Label,"one of the objects has no shape")
+                    toselect.append(obj)
+            else:
+                print("Object",obj.Label,"doesn't exist yet in main doc")
+                toselect.append(obj)
+                additions.append(obj.Shape)
+    
+        for id,obj in activedocids.items():
+            if not id in otherdocids:
+                if obj.isDerivedFrom("Part::Feature"): # don't count building parts
+                    print("Object",obj.Label,"doesn't exist anymore in new doc")
+                    subtractions.append(obj.Shape)
+    
+        matnames = {} # existing materials
+        for obj in activedoc.Objects:
+            if Draft.getType(obj) == "Material":
+                matnames[obj.Label] = obj
+    
+        newmats = {} # new materials
+        for obj in otherdoc.Objects:
+            if Draft.getType(obj) == "Material":
+                if not obj.Label in matnames:
+                    print("Material",obj.Label,"doesn't exist in main doc")
+                    toselect.append(obj)
+                    newmats[obj.Label] = obj
+    
+        if newmats:
+            group = otherdoc.addObject("App::DocumentObjectGroup","New_materials")
+            for newmat in newmats.values():
+                group.addObject(newmat)
+    
+        if toselect:
+            FreeCAD.setActiveDocument(otherdoc.Name)
+            FreeCAD.ActiveDocument=Gui.getDocument(otherdoc.Name)
+            FreeCADGui.ActiveDocument=Gui.getDocument(otherdoc.Name)
+            FreeCADGui.Selection.clearSelection()
+            for obj in toselect:
+                FreeCADGui.Selection.addSelection(obj)
+    
+        if additions:
+            shape = Part.makeCompound(additions)
+            obj = activedoc.addObject("Part::Feature","Additions")
+            obj.Shape = shape
+            obj.ViewObject.LineWidth = 5
+            obj.ViewObject.LineColor = (0.0,1.0,0.0)
+            obj.ViewObject.ShapeColor = (0.0,1.0,0.0)
+            obj.ViewObject.Transparency = 60
+    
+        if subtractions:
+            shape = Part.makeCompound(subtractions)
+            obj = activedoc.addObject("Part::Feature","Subtractions")
+            obj.Shape = shape
+            obj.ViewObject.LineWidth = 5
+            obj.ViewObject.LineColor = (1.0,0.0,0.0)
+            obj.ViewObject.ShapeColor = (1.0,0.0,0.0)
+            obj.ViewObject.Transparency = 60
+    
+        if modified:
+            shape = Part.makeCompound(modified)
+            obj = activedoc.addObject("Part::Feature","Modified")
+            obj.Shape = shape
+            obj.ViewObject.LineWidth = 5
+            obj.ViewObject.LineColor = (1.0,1.0,0.0)
+            obj.ViewObject.ShapeColor = (1.0,1.0,0.0)
+            obj.ViewObject.Transparency = 60
+    
+        if matchangedghost:
+            shape = Part.makeCompound(matchangedghost)
+            obj = otherdoc.addObject("Part::Feature","Material_changed")
+            obj.Shape = shape
+            obj.ViewObject.LineWidth = 1
+            obj.ViewObject.LineColor = (0.0,0.0,1.0)
+            obj.ViewObject.ShapeColor = (0.0,0.0,1.0)
+            obj.ViewObject.Transparency = 90
+    
+        if matchanged:
+            reply = QtGui.QMessageBox.question(None, "", str(len(matchanged))+" objects still have the same shape but have a different material. Do you wish to update them in the main document?", QtGui.QMessageBox.Yes | QtGui.QMessageBox.No, QtGui.QMessageBox.No)
+            if reply == QtGui.QMessageBox.Yes:
+                for obj in matchanged:
+                    mat = obj.Material
+                    if mat:
+                        mainobj = activedocids[obj.IfcAttributes["IfcUID"]]
+                        if mainobj.Material:
+                            mainmatlabel = mainobj.Material.Label
+                        else:
+                            mainmatlabel = "None"
+                        if mat.Label in matnames:
+                            # the new material already exists, just change it
+                            print("Changing material of",mainobj.Label,"from",mainmatlabel,"to",mat.Label)
+                            mainobj.Material = matnames[mat.Label]
+                        else:
+                            # copy the material over
+                            newmat = activedoc.addObject("App::MaterialObjectPython","Material")
+                            newmat.Label = mat.Label
+                            import ArchMaterial
+                            ArchMaterial._ArchMaterial(newmat)
+                            ArchMaterial._ViewProviderArchMaterial(newmat.ViewObject)
+                            newmat.Material = mat.Material
+                            print("Changing material of",mainobj.Label,"from",mainmatlabel,"to",newmat.Label)
+                            mainobj.Material = newmat
+                            matnames[newmat.Label] = newmat
+
+else:
+    reply = QtGui.QMessageBox.information(None,"","You need two documents open to run this macro. One which is your main document, and one that contains new objects that you wish to compare against the existing one. Make sure only the objects you wish to compare in both documents are visible.")
+
