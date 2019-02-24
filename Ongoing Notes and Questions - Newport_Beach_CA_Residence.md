@@ -59,6 +59,9 @@ follow
 	- California Climate Zone: 6
 		- [Subchapter 7 Low-Rise Residential Buildings— Mandatory Features and Devices](https://up.codes/viewer/california/ca-energy-code-2016/chapter/7/low-rise-residential-buildings-mandatory-features-and-devices#150.0)
 		- [Section 150.1 Performance and Prescriptive Compliance Approaches for Low-Rise Residential Buildings](https://up.codes/viewer/california/ca-energy-code-2016/chapter/8/low-rise-residential-buildings-performance-and-prescriptive-compliance-approache#150.1)
+			- https://www.dropbox.com/s/9kr8pzq0ttx4rr9/2019-01-17_11-41-35_chromeSubchapter_8_Low-Rise_Residential_Buildings%E2%80%94perfochrome.png?dl=0
+			- https://www.dropbox.com/s/0s6hwiwb97utz3i/2019-01-17_11-40-56_chromeSubchapter_8_Low-Rise_Residential_Buildings%E2%80%94perfochrome.png?dl=0
+			- https://www.dropbox.com/s/mb4ya1q98324doi/2019-01-17_11-42-25_chromeSubchapter_8_Low-Rise_Residential_Buildings%E2%80%94perfochrome.png?dl=0
 
 
 
